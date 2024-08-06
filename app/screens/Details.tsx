@@ -1,8 +1,12 @@
 import { View, Text } from 'react-native';
-const Details = () => {
+import type { DetailsPageProps } from '../navigation/RootStack';
+
+const Details = ({ navigation, route }: DetailsPageProps) => {
+	const { itemId } = route.params;
+
 	return (
 		<View>
-			<Text>Details</Text>
+			<Text>Details passed itemId: {itemId}</Text>
 		</View>
 	);
 };

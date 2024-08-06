@@ -1,8 +1,10 @@
-import { View, Text } from 'react-native';
-const Profile = () => {
+import { View, Text, Button } from 'react-native';
+import type { ProfilePageProps } from '../navigation/RootStack';
+
+const Profile = ({ navigation }: ProfilePageProps) => {
 	return (
 		<View>
-			<Text>Profile</Text>
+			<Button title='Go to Feed' onPress={() => navigation.push('Feed')} />
 		</View>
 	);
 };

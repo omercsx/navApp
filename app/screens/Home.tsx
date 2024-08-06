@@ -8,8 +8,8 @@ const Home = ({ navigation }: HomePageProps) => {
 		<View>
 			<Text>Home</Text>
 			<Button
-				title='Go to details page'
-				onPress={() => navigation.push('Feed')}
+				title='Go to Profile'
+				onPress={() => navigation.push('Profile')}
 			/>
 		</View>
 	);
